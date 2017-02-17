@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="MetaTag.widget.MetaTag" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>MetaTag</name>
+    <description>Allows adding meta tags to the head of your Mendix web pages. This first version only contains a static version</description>
+
+    <icon />
+
+    <properties>
+        <property key="metaData" type="object" isList="true" required="false">
+            <caption>General tags</caption>
+            <category>META tags</category>
+            <description>List of tags and values for the generic meta tags</description>
+            <properties>
+                <property key="tagName" type="string" required="true">
+                    <caption>tagName</caption>
+                    <category>Appearance</category>
+                    <description>Meta tag name="{tagName}"</description>  
+                </property>
+                <property key="tagValue" type="string" required="true">
+                    <caption>tagValue</caption>
+                    <category>Appearance</category>
+                    <description>Meta tag content="{tagValue}"</description>  
+                </property>
+            </properties>
+        </property> 
+        <property key="ogData" type="object" isList="true" required="false">
+            <caption>Open Graph</caption>
+            <category>META tags</category>
+            <description>List of tags and values for the specific open graph tags</description>
+            <properties>
+                <property key="tagName" type="string" required="true">
+                    <caption>tagName</caption>
+                    <category>Appearance</category>
+                    <description>Meta tag property="og:{tagName}"</description>  
+                </property>
+                <property key="tagValue" type="string" required="true">
+                    <caption>tagValue</caption>
+                    <category>Appearance</category>
+                    <description>Meta tag content="{tagValue}"</description>  
+                </property>
+            </properties>
+        </property>
+    </properties>
+</widget>
