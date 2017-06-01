@@ -23,11 +23,6 @@ define([
             logger.debug(this.arrNewElements);
         },
 
-        update: function (obj, callback) {
-            logger.debug(this.id + ".update");
-            this._executeCallback(callback, "update");
-        },
-
         resize: function (box) {
             // Keep this in, does not do anything
         },
